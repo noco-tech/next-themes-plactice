@@ -2,9 +2,11 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { useThemeStore } from "./ThemeStore";
 export default function ThemeButton() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  let { themeState, setThemeState } = useThemeStore();
 
 
   useEffect(() => {
@@ -16,8 +18,10 @@ export default function ThemeButton() {
   const onClickHandler = () => {
     if (theme === "light") {
       setTheme("dark");
+      setThemeState("dark");
     } else {
       setTheme("light");
+      setThemeState("light");
     }
   }
 
