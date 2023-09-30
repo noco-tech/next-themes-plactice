@@ -29,8 +29,8 @@ body {
 }
 
 .toggle_label {
-  width: 70px;
-  height: 42px;
+  width: 62px;
+  height: 37px;
   background: #fff;
   border: 3px solid #c74343;
   position: relative;
@@ -43,8 +43,8 @@ body {
 .toggle_label:after {
   content: "";
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 27px;
+  height: 27px;
   border-radius: 100%;
   left: 2px;
   top: 2px;
@@ -59,13 +59,13 @@ body {
 }
 
 .toggle_input:checked + .toggle_label:after {
-  left: 30px;
+  left: 27px;
   background: #4BD865;
 }
 
 .toggle_button {
   position: relative;
-  width: 70px;
-  height: 42px;
+  width: 62px;
+  height: 37px;
   margin: auto;
 }
